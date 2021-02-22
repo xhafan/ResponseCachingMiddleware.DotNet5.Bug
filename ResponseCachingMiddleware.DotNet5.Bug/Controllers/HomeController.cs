@@ -25,7 +25,7 @@ namespace ResponseCachingMiddleware.DotNet5.Bug.Controllers
         public string Get()
         {
             _logger.LogInformation("Get called");
-            return _RandomString(1147563);
+            return _RandomString(10000000);
         }
 
         private string _RandomString(int length)
