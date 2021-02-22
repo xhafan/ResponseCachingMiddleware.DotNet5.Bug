@@ -1,6 +1,6 @@
 # ResponseCachingMiddleware.DotNet5.Bug
 
-Run the solution, it should run both ResponseCachingMiddleware.DotNet5.Bug Web API server and RequestsGeneratorApp console app which will start sending requests to the Web API server. After couple of requests sent to the Web API server, kill the console app via CTRL+C, and it will usually make the Web API server throw this exception:
+Run the solution, it should run both ResponseCachingMiddleware.DotNet5.Bug Web API server and RequestsGeneratorApp console app which will start sending requests to the Web API server, which handles them using response caching. After couple of requests sent to the Web API server, kill the console app via CTRL+C, and it will usually make the Web API server throw this exception:
 
 ```
 System.ArgumentOutOfRangeException: Cannot allocate more than 4096 bytes in a single buffer (Parameter 'size')
